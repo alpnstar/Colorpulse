@@ -73,7 +73,10 @@ body {
     &__wrapper {
 
     }
-    
+    &__title-block {
+        text-align: center;
+        margin-bottom: 61px;
+    }
     &__title-text {
         display: block;
         margin-top: 20px;
@@ -159,13 +162,6 @@ body {
     &__wrapper {
 
     }
-    &__title-block {
-        width: fit-content;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 64px;
-    }
     &__item-wrapper {
         display: flex;
         flex-direction: column;
@@ -206,6 +202,7 @@ body {
     }
 }
 .reviews {
+    margin-top: 96px;
     &__wrapper {
     }
     &__items-wrapper {
@@ -216,23 +213,23 @@ body {
         display: flex;
         align-items: center;
         column-gap: 98px;
+        line-height: 24px;
         background: #FFFFFF;
         border-radius: 40px;
-        &:nth-child(1) {
-            padding: 64px 99px 64px 99px;
-        }
-        
+        padding: 64px 99px 64px 99px;
         .--bold {
             font-weight: 500;
         }
         p:nth-child(2) {
-            margin: 27px 0 20px 0;
         }
     } 
     .reviews__user {
         text-align: center;
         &-review {
             max-width: 475px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 13px;
         }
     }
     .user__fullname {
