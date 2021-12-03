@@ -14,6 +14,7 @@ body,* {
 }
 body {
     color: #000D3A;
+    background: #F7F7F7;
 }
 .logo {
     font-family: 'Stolzl';
@@ -72,12 +73,7 @@ body {
     &__wrapper {
 
     }
-    &__title-block {
-        text-align: center;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom: 61px;
-    }
+    
     &__title-text {
         display: block;
         margin-top: 20px;
@@ -207,5 +203,42 @@ body {
                 padding: 12px 95px;
             }
         }
+    }
+}
+.reviews {
+    &__wrapper {
+    }
+    &__items-wrapper {
+
+    }
+    &__item {
+        color: #444855;
+        display: flex;
+        align-items: center;
+        column-gap: 98px;
+        background: #FFFFFF;
+        border-radius: 40px;
+        &:nth-child(1) {
+            padding: 64px 99px 64px 99px;
+        }
+        
+        .--bold {
+            font-weight: 500;
+        }
+        p:nth-child(2) {
+            margin: 27px 0 20px 0;
+        }
+    } 
+    .reviews__user {
+        text-align: center;
+        &-review {
+            max-width: 475px;
+        }
+    }
+    .user__fullname {
+        margin: 16px 0 4.5px 0;
+        display: block;
+        color: #444855;
+        font-weight: 500;
     }
 }

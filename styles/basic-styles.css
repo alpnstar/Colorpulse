@@ -28,3 +28,9 @@ h3 {
     font-weight: 500;
     border-radius: 30px;
 }
+.title-block {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 61px;
+}
