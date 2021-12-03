@@ -213,4 +213,28 @@ body {
   font-weight: 500;
 }
 
+.features__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 67px;
+}
+.features__items-wrapper h3 {
+  font-size: 14px;
+}
+.features__item {
+  width: 180px;
+}
+.features__item:nth-child(7) .features__img-wrapper {
+  position: relative;
+  top: -20px;
+}
+.features__img-wrapper {
+  width: 162px;
+  margin: 0 auto;
+  height: 150px;
+}
+
 /*# sourceMappingURL=style.css.map */

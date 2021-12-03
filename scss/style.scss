@@ -239,3 +239,34 @@ body {
         font-weight: 500;
     }
 }
+.features {
+    &__wrapper {
+
+    }
+    &__items-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        row-gap: 67px;
+        h3 {
+            font-size: 14px;
+        }
+    }
+    &__item {
+        width: 180px;
+        &:nth-child(7) {
+            .features__img-wrapper {
+                position: relative;
+                top: -20px;
+            }
+        }
+        
+    }
+    &__img-wrapper {
+        width: 162px;
+        margin: 0 auto;
+        height: 150px;
+    }
+}
