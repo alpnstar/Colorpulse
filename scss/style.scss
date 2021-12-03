@@ -1,6 +1,152 @@
 @import url(../styles/fonts.css);
 @import url(../styles/normalize.css);
 @import url(../styles/basic-styles.css);
-
 // SCSS @import:
 @import 'mixins'; @import 'vars';
+
+.container {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+body,* {
+    font-family: 'Montserrat';
+}
+body {
+    color: #000D3A;
+}
+.logo {
+    font-family: 'Stolzl';
+    color: #000D3A;
+    font-size: 32px;
+    font-weight: 300;
+}
+.header {
+    &__wrapper {
+        padding: 24px 0 22px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__element {
+        font-weight: 500;
+    }
+    &__icons-wrap {
+        display: flex;
+        column-gap: 24px;
+        margin: 0 16px;
+    }
+    &__buttons-wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    .btn-style-1 {
+        display: inline-block;
+        padding: 4px 23px;
+        font-weight: 500;
+        border: 2px solid #4B5D9B;
+        color: #000D3A;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+    .btn-style-2 {
+        display: inline-block;
+        padding: 4px 23px;
+        background-color: #00B333;
+        border: 2px solid transparent;
+        color: white;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+}
+.start-about {
+    &__wrapper {
+        background: linear-gradient(255.35deg, #954FB8 5.6%, #C740AC 36.89%, #E866D0 68.36%, #D164A0 100%);
+        border-radius: 60px;
+        color: white;
+        display: flex;
+    }
+    &__main-content {
+        position: relative;
+        left: -35px;
+        top: 59px;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+        max-width: 388px;
+    }
+}
+.facilities {
+    margin: 96px 0;
+    &__wrapper {
+
+    }
+    &__title-block {
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 61px;
+    }
+    &__title-text {
+        display: block;
+        margin-top: 20px;
+        font-size: 24px;
+        color: $graytext;
+    }
+    &__row {
+        display: flex;
+        column-gap: 5px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        &-row-1 {
+            .facilities__item {
+                &:nth-child(1) {
+                    flex-basis: 428px;
+                    background: url('../imgs/facilities/back-1.png') no-repeat center;
+                   
+                }
+                &:nth-child(2) {
+                    flex-basis: 635px;
+                    background: url('../imgs/facilities/back-2.png') no-repeat center;
+                    
+                } 
+            }
+        }
+        &-row-2 {
+            .facilities__item {
+                background: url('../imgs/facilities/back-3.png');
+                width: 100%;
+                
+            }
+        }
+        &-row-3 {
+            .facilities__item {
+                &:nth-child(1) {
+                    background: url('../imgs/facilities/back-4.png') no-repeat center;
+                    flex-basis: 634px;
+                    
+                }   
+                &:nth-child(2) {
+                    flex-basis: 425px;
+                    background: url('../imgs/facilities/back-5.png') no-repeat center;
+                    
+                }             
+            }
+        }
+    }
+    &__item {
+        height: 340px;
+        background-size: cover;
+        border-radius: 80px;
+        
+    }
+}
