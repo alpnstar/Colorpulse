@@ -492,6 +492,37 @@ body {
             align-items: center;
         }
     }
+    .features {
+        &__img-wrapper {
+            img {
+                width: 100px;
+            }
+            width: 100px;
+            height: 110px;
+        }
+        &__items-wrapper {
+            justify-content: center;
+        }
+        &__item {
+            width: 250px;
+            &:first-child {
+                margin-left: 0px;
+            }
+            &:nth-child(4) {
+            }
+            &:nth-child(9) {
+            }
+            &:nth-child(7) {
+                .features__img-wrapper {
+                    top: -50px;
+                    img {
+                        width: 70px;
+                    }
+                }
+            }
+            
+        }
+    }
 }
 @media screen and (max-width:430px) {
     .title-block {
