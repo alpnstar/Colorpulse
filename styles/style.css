@@ -306,9 +306,6 @@ body {
   border-radius: 30px;
   margin-top: 10px;
 }
-.footer .form-wrapper input:first-child {
-  margin: 0;
-}
 .footer .form-wrapper input:nth-child(-n+3) {
   padding: 13px 20px;
 }
@@ -321,6 +318,10 @@ body {
   font-weight: 500;
   font-size: 18px;
   padding: 13px 0;
+}
+.footer .form-wrapper input:first-child {
+  margin: 0;
+  padding-bottom: 109px;
 }
 .footer .form-confident {
   display: block;
