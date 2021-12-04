@@ -490,6 +490,36 @@ body {
   .features__item:nth-child(7) .features__img-wrapper img {
     width: 70px;
   }
+
+  .questions__block-title {
+    font-size: 14px !important;
+  }
+  .questions__item-title {
+    font-size: 16px !important;
+  }
+  .questions__item-description {
+    font-size: 16px !important;
+  }
+
+  .footer .form-wrapper {
+    padding: 42px 10px;
+  }
+  .footer .form-confident {
+    width: 307px;
+  }
+  .footer__last-line ul {
+    font-size: 14px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer__last-line ul li {
+    margin-left: 0;
+  }
+  .footer__last-line .copy {
+    text-align: center;
+    margin-top: 64px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 430px) {
   .title-block {

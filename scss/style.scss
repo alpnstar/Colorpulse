@@ -523,6 +523,40 @@ body {
             
         }
     }
+    .questions {
+        &__block-title {
+            font-size: 14px !important;
+        }
+        &__item-title {
+            font-size: 16px !important;
+        }
+        &__item-description {
+            font-size: 16px !important;
+        }
+    }
+    .footer {
+        .form-wrapper {
+            padding: 42px 10px;
+        }
+        .form-confident {
+            width: 307px;
+        }
+        &__last-line {
+            ul {
+                font-size: 14px;
+                text-align: center;
+                flex-direction: column;
+                li {
+                    margin-left: 0;
+                }
+            }
+            .copy {
+                text-align: center;
+                margin-top: 64px;
+                font-size: 14px;
+            }
+        }
+    }
 }
 @media screen and (max-width:430px) {
     .title-block {
