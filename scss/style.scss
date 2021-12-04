@@ -270,3 +270,42 @@ body {
         height: 150px;
     }
 }
+.questions {
+    margin-top: 96px;
+    &__wrapper {
+        
+    } 
+    &__item {
+        padding-bottom: 24px;
+        border-bottom: 1px #D9DCE3 solid;
+        &-description {
+            font-size: 18px;
+            line-height: 28px;
+            width: 874px;
+            padding-left: 24px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 14px;
+            &::after {
+                content: url('../imgs/questions/row.png');
+                position: absolute;
+                left: 83.5%;
+            }
+        }
+    }
+    &__block-items-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    &__block-title {
+        font-weight: 600;
+        margin-bottom: 32px;
+        display: block;
+        margin-top: 48px;
+        position: relative;
+    }
+}
