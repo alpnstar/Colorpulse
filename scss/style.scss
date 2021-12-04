@@ -321,10 +321,16 @@ body {
             border: none;
             border-radius: 30px;
             margin-top: 10px;
+            border: 1px solid transparent;
             &:nth-child(-n+3) {
                 padding: 13px 20px;
                 &::placeholder {
                     color: #444855;
+                }
+                &:focus {
+                    transition: 0.3s;
+                    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+                    border: 1px solid #0095FF;
                 }
             }
             &:last-child {
