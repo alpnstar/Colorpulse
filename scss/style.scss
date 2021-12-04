@@ -6,11 +6,13 @@
 
 .container {
     max-width: 1074px;
-    padding: 0 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     margin: 0 auto;
 }
 body,* {
     font-family: 'Montserrat';
+    background-repeat: no-repeat !important;
 }
 body {
     color: #000D3A;
@@ -21,6 +23,21 @@ body {
     color: #000D3A;
     font-size: 32px;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.burger {
+    display: none;
+    span {
+        display: block;
+        margin-top: 5.8px;
+        background: #000D3A;
+        border-radius: 2px;
+        &:first-child {
+        }
+        width: 24px;
+        height: 2px;
+    }
 }
 
 .header {
@@ -54,22 +71,33 @@ body {
     
 }
 .start-about {
+    padding: 0 10px;
     &__wrapper {
+        padding: 0 !important;
+        height: 554px;
         background: linear-gradient(255.35deg, #954FB8 5.6%, #C740AC 36.89%, #E866D0 68.36%, #D164A0 100%);
         border-radius: 60px;
         color: white;
         display: flex;
+        align-items: flex-start;
     }
     &__main-content {
         position: relative;
-        left: -35px;
         top: 59px;
+        left: 79px;
     }
     &__text {
         font-size: 24px;
         line-height: 36px;
         font-weight: 400;
         max-width: 388px;
+    }
+    &__background-wrapper {
+        align-self: flex-end;
+        width: 511px;
+        height: 477px;
+        background: url('../imgs/start-about/start-about.png') no-repeat;
+        background-size: cover;
     }
 }
 .facilities {
@@ -240,6 +268,7 @@ body {
     }
 }
 .features {
+    margin-top: 94px;
     &__items-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -376,6 +405,117 @@ body {
             max-width: 320px;  
             margin: 20px auto 0 auto;
             color: #444855;
+        }
+    }
+}
+@media screen and (max-width:777px) {
+    .title-block h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        left: -21%;
+        top: 20%;
+    }
+    .logo {
+        margin-left: 43px;
+        position: relative;
+    }
+    .header {
+        &__icons-wrap {
+            display: none;
+        }
+        &__element {
+            display: none;
+        }
+    }
+    .start-about {
+        
+        &__wrapper {
+            
+            height: auto;
+            flex-direction: column;
+        }
+        &__main-content {
+            padding-left: 32px;
+            position: static;
+            margin-top: 32px;
+            order: -1;
+            p {
+                width: 275px;
+                font-size: 18px;
+            }
+        }
+        &__background-wrapper {
+            align-self: center;
+        }
+    }
+    .facilities {
+        &__item {
+            &-5 {
+                flex-basis: 545px !important;
+                background-position: -150px !important;
+            }
+            &-6 {
+                background-position: -60px !important;
+                
+            }
+            &-content-wrap {
+                left: 25px;
+                top: 30px;
+            }
+        }   
+    }
+    .products {
+        &__item {
+            padding: 24px 34px;
+            flex-direction: column;
+            img {
+                order: -1;
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .title-block {
+        
+    }
+    .start-about {
+        
+        &__background-wrapper {
+            border-radius: 60px;
+            width: 100%;
+            background-position: 0 70px;
+            background-size: 107%;
+        }
+    }
+    .facilities {
+        &__title-block {
+            margin-bottom: 16px;
+        }
+        margin-top: 28px;
+        &__row {
+            display: block;
+        }
+        &__item {
+            &-4 {
+                background-position:-300px  !important;
+                background-repeat: no-repeat !important;
+                
+            }
+            &-5 {
+                .facilities__item-content-wrap {
+                    width: 135px !important;
+                }
+            }
+            &-6 {
+                background-position: unset !important;
+                .facilities__item-content-wrap {
+                    width: 135px !important;
+                }
+            }
         }
     }
 }
