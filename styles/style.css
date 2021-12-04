@@ -290,7 +290,7 @@ body {
 .questions__item-description {
   font-size: 18px;
   line-height: 28px;
-  width: 874px;
+  max-width: 874px;
   padding-left: 24px;
 }
 .questions__item-title {
@@ -454,8 +454,25 @@ body {
   .products__item img {
     order: -1;
   }
+
+  .reviews__user {
+    margin: 0 !important;
+    margin-bottom: 32px !important;
+  }
+  .reviews__user .user-about {
+    display: block;
+    width: 335px;
+  }
+  .reviews__item {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 430px) {
+  .title-block {
+    margin-bottom: 32px;
+  }
+
   .start-about__background-wrapper {
     border-radius: 60px;
     width: 100%;
@@ -464,6 +481,7 @@ body {
   }
 
   .facilities {
+    margin: 48px 0 !important;
     margin-top: 28px;
   }
   .facilities__title-block {
@@ -484,6 +502,17 @@ body {
   }
   .facilities__item-6 .facilities__item-content-wrap {
     width: 135px !important;
+  }
+
+  .products__item img {
+    width: 334px !important;
+  }
+
+  .reviews {
+    margin: 0;
+  }
+  .reviews__item {
+    padding: 37px 16px 32px 16px !important;
   }
 }
 
