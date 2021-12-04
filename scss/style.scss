@@ -366,8 +366,8 @@ body {
             }
         }
         .copy {
-            width: fit-content;
-            
+            display: block;
+            max-width: 320px;  
             margin: 20px auto 0 auto;
             color: #444855;
         }
