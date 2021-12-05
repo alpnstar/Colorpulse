@@ -391,9 +391,11 @@ body {
 
             li {
                 margin-left: 32px;
-                border-bottom: 2px transparent solid;
-                &:hover {
-                    border-bottom: 2px black solid;
+                a{
+                    border-bottom: 2px transparent solid;
+                    &:hover {
+                        border-bottom: 2px black solid;
+                    }
                 }
                 &:first-child {
                     margin-left: 0;

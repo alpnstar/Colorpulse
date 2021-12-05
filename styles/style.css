@@ -376,9 +376,11 @@ body {
 }
 .footer__last-line ul li {
   margin-left: 32px;
+}
+.footer__last-line ul li a {
   border-bottom: 2px transparent solid;
 }
-.footer__last-line ul li:hover {
+.footer__last-line ul li a:hover {
   border-bottom: 2px black solid;
 }
 .footer__last-line ul li:first-child {
