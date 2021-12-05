@@ -104,6 +104,8 @@ body,html {
         max-width: 388px;
     }
     &__background-wrapper {
+        position: relative;
+        left: 30px;
         align-self: flex-end;
         width: 511px;
         height: 477px;
@@ -482,6 +484,7 @@ body,html {
             }
         }
         &__background-wrapper {
+            left: 0;
             align-self: center;
         }
     }

@@ -96,6 +96,8 @@ body, html {
   max-width: 388px;
 }
 .start-about__background-wrapper {
+  position: relative;
+  left: 30px;
   align-self: flex-end;
   width: 511px;
   height: 477px;
@@ -464,6 +466,7 @@ body, html {
     font-size: 18px;
   }
   .start-about__background-wrapper {
+    left: 0;
     align-self: center;
   }
 
