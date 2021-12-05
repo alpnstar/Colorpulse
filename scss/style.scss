@@ -42,7 +42,7 @@ body,html {
 
 .header {
     &__wrapper {
-        padding: 24px 0 22px 0;
+        padding: 24px 10px 22px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -84,7 +84,6 @@ body,html {
 .start-about {
     padding: 0 10px;
     &__wrapper {
-        padding: 0 !important;
         height: 554px;
         background: linear-gradient(255.35deg, #954FB8 5.6%, #C740AC 36.89%, #E866D0 68.36%, #D164A0 100%);
         border-radius: 60px;
@@ -443,13 +442,10 @@ body,html {
         line-height: 40px;
     }
     .burger {
-        display: block;
-        position: absolute;
-        left: 5%;
-        top: 36%;
+       
     }
     .logo {
-        margin-left: 70px;
+        
     }
     .header {
         width: 100%;
@@ -457,7 +453,6 @@ body,html {
         position: fixed;
         left: 0;
         top: 0;
-        padding: 0 10px;
         z-index: 99;
         &__icons-wrap {
             display: none;
@@ -612,7 +607,7 @@ body,html {
         margin-bottom: 32px;
     }
     .logo {
-        margin-left: 50px;
+        
     }
     .start-about {
         
@@ -696,6 +691,19 @@ body,html {
     }
 }
 @media screen and (max-width: 380px) {
+   .facilities {
+       &__item {
+           &-3 {
+               background-position:  -180px !important;
+           }
+           &-6 {
+               background-position: -50px !important;
+            }
+           &-5 {
+               background-position: -180px !important;
+           }
+       }
+   }
     .features__item {
         padding: 0 22px !important;
     }
