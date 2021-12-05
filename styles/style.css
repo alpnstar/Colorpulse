@@ -3,8 +3,8 @@
 @import url(../styles/basic-styles.css);
 .container {
   max-width: 1074px;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
@@ -13,9 +13,10 @@ body, * {
   background-repeat: no-repeat !important;
 }
 
-body {
+body, html {
   color: #000D3A;
   background: #F7F7F7;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -62,6 +63,13 @@ body {
 .header__buttons-wrap {
   display: flex;
   align-items: center;
+}
+.header__buttons-wrap a {
+  transition: background 0.1s;
+}
+.header__buttons-wrap a:hover {
+  background: #42ed73;
+  transition: 0.1s;
 }
 
 .start-about {
@@ -210,6 +218,11 @@ body {
 }
 .products__item .btn-style-2 {
   padding: 12px 63px;
+  transition: background 0.1s;
+}
+.products__item .btn-style-2:hover {
+  background: #42ed73;
+  transition: 0.1s;
 }
 .products__item--last {
   padding: 25px 35px 25px 100px;
@@ -349,10 +362,15 @@ body {
 }
 .footer .form-wrapper input:last-child {
   background: #00B333;
+  transition: background 0.1s;
   color: white;
   font-weight: 500;
   font-size: 18px;
   padding: 13px 0;
+}
+.footer .form-wrapper input:last-child:hover {
+  background: #42ed73;
+  transition: 0.1s;
 }
 .footer .form-wrapper input:first-child {
   margin: 0;
@@ -379,6 +397,10 @@ body {
 }
 .footer__last-line ul li {
   margin-left: 32px;
+  border-bottom: 2px transparent solid;
+}
+.footer__last-line ul li:hover {
+  border-bottom: 2px black solid;
 }
 .footer__last-line ul li:first-child {
   margin-left: 0;
@@ -404,7 +426,7 @@ body {
   }
 
   .logo {
-    margin-left: 43px;
+    margin-left: 70px;
   }
 
   .header {
@@ -413,6 +435,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    padding: 0 10px;
     z-index: 99;
   }
   .header__icons-wrap {
@@ -424,7 +447,7 @@ body {
 
   .start-about {
     position: relative;
-    margin-top: 78px;
+    margin-top: 87px;
   }
   .start-about__wrapper {
     height: auto;
@@ -505,6 +528,15 @@ body {
   }
   .questions__item-title {
     font-size: 16px !important;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 14px;
+  }
+  .questions__item-title::after {
+    content: url("../imgs/questions/row.png");
+    position: absolute;
+    left: 96.5%;
   }
   .questions__item-description {
     font-size: 16px !important;
@@ -536,6 +568,10 @@ body {
 @media screen and (max-width: 430px) {
   .title-block {
     margin-bottom: 32px;
+  }
+
+  .logo {
+    margin-left: 50px;
   }
 
   .start-about__background-wrapper {
@@ -580,6 +616,19 @@ body {
   .reviews__item {
     padding: 37px 16px 32px 16px !important;
   }
+
+  .questions__item-title {
+    font-size: 16px !important;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 14px;
+  }
+  .questions__item-title::after {
+    content: url("../imgs/questions/row.png");
+    position: absolute;
+    left: 93.6%;
+  }
 }
 @media screen and (max-width: 320px) {
   .start-about__main-content {
@@ -588,6 +637,10 @@ body {
 
   .logo-text {
     display: none;
+  }
+
+  .products__item a {
+    padding: 7px 40px !important;
   }
 
   .facilities__item-6 {
