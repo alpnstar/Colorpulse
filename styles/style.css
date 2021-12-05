@@ -1,22 +1,10 @@
 @import url(../styles/fonts.css);
 @import url(../styles/normalize.css);
 @import url(../styles/basic-styles.css);
-.container {
-  max-width: 1074px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-}
-
-body, * {
-  font-family: "Montserrat";
-  background-repeat: no-repeat !important;
-}
-
-body, html {
+body {
   color: #000D3A;
   background: #F7F7F7;
-  overflow-x: hidden;
+  font-family: "Montserrat";
 }
 
 .logo {
@@ -26,17 +14,6 @@ body, html {
   font-weight: 300;
 }
 
-.burger {
-  display: none;
-}
-.burger span {
-  display: block;
-  margin-top: 5.8px;
-  background: #000D3A;
-  border-radius: 2px;
-  width: 24px;
-  height: 2px;
-}
 .header__wrapper {
   padding: 24px 10px 22px 10px;
   display: flex;
@@ -280,7 +257,7 @@ body, html {
   font-size: 14px;
 }
 .features__item {
-  width: 180px;
+  width: 17%;
 }
 .features__item:nth-child(7) .features__img-wrapper {
   position: relative;

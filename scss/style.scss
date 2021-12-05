@@ -3,41 +3,16 @@
 @import url(../styles/basic-styles.css);
 // SCSS @import:
 @import 'mixins'; @import 'vars';
-
-.container {
-    max-width: 1074px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
-}
-body,* {
-    font-family: 'Montserrat';
-    background-repeat: no-repeat !important;
-}
-body,html {
+body {
     color: #000D3A;
     background: #F7F7F7;
-    overflow-x: hidden;
+    font-family: 'Montserrat';
 }
 .logo {
     font-family: 'Stolzl';
     color: #000D3A;
     font-size: 32px;
     font-weight: 300;
-}
-.burger {
-    display: none;
-
-    span {
-        display: block;
-        margin-top: 5.8px;
-        background: #000D3A;
-        border-radius: 2px;
-        &:first-child {
-        }
-        width: 24px;
-        height: 2px;
-    }
 }
 
 .header {
@@ -69,10 +44,6 @@ body,html {
         align-items: center;
         a{
             transition: background 0.1s;
-        }
-        
-        img {
-            
         }
         a:hover {
             background: #42ed73;
@@ -299,7 +270,7 @@ body,html {
         }
     }
     &__item {
-        width: 180px;
+        width: 17%;
         &:nth-child(7) {
             .features__img-wrapper {
                 position: relative;
@@ -440,12 +411,6 @@ body,html {
     .title-block h2 {
         font-size: 28px;
         line-height: 40px;
-    }
-    .burger {
-       
-    }
-    .logo {
-        
     }
     .header {
         width: 100%;

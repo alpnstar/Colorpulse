@@ -1,4 +1,17 @@
 /* text and titles */
+.container {
+    max-width: 1074px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+body,* {
+    font-family: 'Montserrat';
+    background-repeat: no-repeat !important;
+}
+body,html {
+    overflow-x: hidden;
+}
 h1 {
     font-weight: 300;
     font-size: 48px;
