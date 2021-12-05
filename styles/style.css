@@ -23,8 +23,6 @@ body {
   color: #000D3A;
   font-size: 32px;
   font-weight: 300;
-  display: flex;
-  align-items: center;
 }
 
 .burger {
@@ -401,15 +399,22 @@ body {
   .burger {
     display: block;
     position: absolute;
-    left: -21%;
-    top: 20%;
+    left: 5%;
+    top: 36%;
   }
 
   .logo {
     margin-left: 43px;
-    position: relative;
   }
 
+  .header {
+    width: 100%;
+    background: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+  }
   .header__icons-wrap {
     display: none;
   }
@@ -417,6 +422,10 @@ body {
     display: none;
   }
 
+  .start-about {
+    position: relative;
+    margin-top: 78px;
+  }
   .start-about__wrapper {
     height: auto;
     flex-direction: column;
@@ -461,7 +470,7 @@ body {
   }
   .reviews__user .user-about {
     display: block;
-    width: 335px;
+    max-width: 335px;
   }
   .reviews__item {
     flex-direction: column;
@@ -506,6 +515,7 @@ body {
   }
   .footer .form-confident {
     width: 307px;
+    margin: 24px auto 0 auto;
   }
   .footer__last-line ul {
     font-size: 14px;
@@ -513,6 +523,8 @@ body {
     flex-direction: column;
   }
   .footer__last-line ul li {
+    font-weight: 500;
+    margin-top: 10px;
     margin-left: 0;
   }
   .footer__last-line .copy {
@@ -563,9 +575,28 @@ body {
 
   .reviews {
     margin: 0;
+    margin-top: 42px;
   }
   .reviews__item {
     padding: 37px 16px 32px 16px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .start-about__main-content {
+    padding-left: 10px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .facilities__item-6 {
+    background-position: -100px !important;
+  }
+
+  .start-about__background-wrapper {
+    background-position: -18px 70px;
+    background-size: 115%;
   }
 }
 
