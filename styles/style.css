@@ -287,6 +287,7 @@ body {
   font-size: 18px;
   display: block;
   margin-bottom: 14px;
+  line-height: 24px;
 }
 .questions__item-title::after {
   content: url("../imgs/questions/row.png");
@@ -606,6 +607,9 @@ body {
     content: url("../imgs/questions/row.png");
     position: absolute;
     left: 93.6%;
+  }
+  .questions__item-description {
+    padding-right: 55px;
   }
 }
 @media screen and (max-width: 380px) {

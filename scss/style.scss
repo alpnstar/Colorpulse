@@ -301,6 +301,7 @@ body {
             font-size: 18px;
             display: block;
             margin-bottom: 14px;
+            line-height: 24px;
             &::after {
                 content: url('../imgs/questions/row.png');
                 position: absolute;
@@ -505,10 +506,6 @@ body {
             &:first-child {
                 margin-left: 0px;
             }
-            &:nth-child(4) {
-            }
-            &:nth-child(9) {
-            }
             &:nth-child(7) {
                 .features__img-wrapper {
                     top: -50px;
@@ -570,9 +567,6 @@ body {
 @media screen and (max-width:430px) {
     .title-block {
         margin-bottom: 32px;
-    }
-    .logo {
-        
     }
     .start-about {
         
@@ -652,7 +646,10 @@ body {
                 position: absolute;
                 left: 93.6%;
             }
-    }
+        }
+        &__item-description {
+            padding-right: 55px;
+        }
     }
 }
 @media screen and (max-width: 380px) {
