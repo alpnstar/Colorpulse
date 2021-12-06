@@ -450,10 +450,6 @@ body {
 }
 
 @media screen and (max-width: 777px) {
-  .burger-menu {
-    display: block;
-  }
-
   .title-block h2 {
     font-size: 28px;
     line-height: 40px;
