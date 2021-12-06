@@ -32,15 +32,43 @@ body {
                     content: url('../imgs/burger/question.svg');
                 }                
             }
+            li:nth-child(2) {
+                &::before {
+                    content: url('../imgs/burger/pay.svg');
+                    top: -0.5px;
+                }
+            }
             li:nth-child(3) {
                 border-bottom: 1px rgba(75, 93, 155, 0.5) solid;
                 padding-bottom: 26px;
+                &::before {
+                    content: url('../imgs/burger/user.svg   ');
+                    top: -6.5px;
+                }
             }
         }
         &:nth-child(2) {
+            li:nth-child(1) {
+                &::before {
+                    content: url('../imgs/header/phone.svg');
+                }
+            }
             li:nth-child(2) {
                 border-bottom: 1px rgba(75, 93, 155, 0.5) solid;
                 padding-bottom: 26px;
+                &::before {
+                    content: url('../imgs/burger/message.svg');
+                    left: -37.5px;
+                }
+            }
+        }
+        &:nth-child(3) {
+            li:nth-child(1) {
+                &::before {
+                    content: url('../imgs/burger/user2.svg');
+                    left: -37.5px;
+                    top: -6.5px;
+                }
             }
         }
         li {
