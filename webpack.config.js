@@ -22,23 +22,21 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.html'),
             minify: false,
         }),
-        new MiniCssExtractPlugin({
-            
-        }),
+        new MiniCssExtractPlugin(),
     ],
     module: {
         rules: [
-          {
-            test: /\.html$/i,
-            loader: "html-loader",
-            options: {
-                minimize: false,
-            }
-          },
-          {
-            test: /\.css$/i,
-            use: [devMode ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader"],
-          },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+                options: {
+                    minimize: false,
+                }
+            },
+            {
+                test: /\.(c|sa|sc)ss$/i,
+                use: [devMode ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            },
         ],
-      },
+    },
 }
