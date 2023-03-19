@@ -1,5 +1,5 @@
 {
-  "name": "colorpulse",
+  "name": "name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "clear": "rm -dr bundle"
   },
   "keywords": [],
-  "author": "",
+  "author": "Satiyadzhiev",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.21.3",
