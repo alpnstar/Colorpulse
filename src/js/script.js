@@ -2,13 +2,21 @@ import "./../index.html";
 import "./../scss/style.scss";
 import "@babel/polyfill";
 
-slider(document.querySelectorAll('.reviews__item'),
-    1054,
-    document.querySelector('.reviews__slider-buttons--right'),
-    document.querySelector('.reviews__slider-buttons--left'))
+slider
+    (
+        document.querySelectorAll('.reviews__item'),
+        1054,
+        document.querySelector('.reviews__slider-buttons--right'),
+        document.querySelector('.reviews__slider-buttons--left')
+    )
 
-
-function slider(sliderItem, wrapperWidthPX, buttonNext, buttonPrev) {
+function slider
+    (
+        sliderItem,
+        wrapperWidthPX,
+        buttonNext,
+        buttonPrev
+    ) {
     let itemCount = sliderItem.length;
     let sliderStep = 0;
 
@@ -29,4 +37,19 @@ function slider(sliderItem, wrapperWidthPX, buttonNext, buttonPrev) {
         }
     }
 }
-
+descriptionExpand(
+    document.querySelectorAll('.questions__item-title'),
+);
+function descriptionExpand
+    (
+        title
+    ) {
+    title.forEach(item => {
+        item.onclick = event => {
+            console.log(event)
+            let target = event.currentTarget.nextElementSibling;
+            event.currentTarget.classList.toggle('questions__item-title--rotate')
+            target.classList.toggle('questions__item-description--expand');
+        }
+    })
+}

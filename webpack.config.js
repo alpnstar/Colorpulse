@@ -23,7 +23,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'),
-            minify: false,
         }),
         new MiniCssExtractPlugin(),
     ],
@@ -33,7 +32,6 @@ module.exports = {
                 test: /\.html$/i,
                 loader: "html-loader",
                 options: {
-                    minimize: false,
                 }
             },
             {
